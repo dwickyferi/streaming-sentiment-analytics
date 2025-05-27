@@ -40,10 +40,6 @@ def sentiment_analysis(message: str) -> str:
     else:
         return 'neutral'
 
-# ✅ Example Usage
-print(sentiment_analysis("stupid people"))                     # ****-**-1990
-
-
 if __name__ == '__main__':
     # Create a UDF server and register the functions
     server = UdfServer(location="0.0.0.0:8815") # You can use any available port in your system. Here we use port 8815.
