@@ -9,7 +9,7 @@ CREATE TABLE live_chat_sentiment (
 
 -- Create a function to perform sentiment analysis
 CREATE FUNCTION sentiment_analysis(VARCHAR) RETURNS VARCHAR
-AS sentiment_analysis USING LINK 'http://192.168.200.180:8815';
+AS sentiment_analysis USING LINK 'http://<HOST>:8815';
 
 
 -- Create a materialized view to perform sentiment analysis on live chat messages
